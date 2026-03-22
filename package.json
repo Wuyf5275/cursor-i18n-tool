@@ -1,0 +1,30 @@
+{
+  "name": "cursor-i18n-tool",
+  "version": "1.0.0",
+  "description": "Cursor 编辑器一键汉化工具 — 跨平台独立可执行程序",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg . --out-path dist --targets node18-win-x64,node18-macos-x64,node18-macos-arm64 --no-bytecode --public-packages \"*\"",
+    "build:win": "pkg . --out-path dist --targets node18-win-x64 --no-bytecode --public-packages \"*\"",
+    "build:mac": "pkg . --out-path dist --targets node18-macos-x64,node18-macos-arm64 --no-bytecode --public-packages \"*\""
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64",
+      "node18-macos-x64",
+      "node18-macos-arm64"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6",
+    "sudo-prompt": "^9.2.1"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^5.15.0"
+  },
+  "license": "MIT"
+}
