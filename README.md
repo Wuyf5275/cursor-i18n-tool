@@ -24,6 +24,19 @@
 
 ## 📸 效果预览
 
+<table>
+  <tr>
+    <td><img src="./screenshots/preview-general.png" alt="通用设置" width="500"/></td>
+    <td><img src="./screenshots/preview-agents.png" alt="智能体设置" width="500"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>通用设置（General）</b></td>
+    <td align="center"><b>智能体设置（Agents）</b></td>
+  </tr>
+</table>
+
+### 终端运行效果
+
 ```
   ┌──────────────────────────────────────┐
   │ ♥ ♠ ♦ ♣ Cursor 一键汉化工具 ♣ ♦ ♠ ♥  │
