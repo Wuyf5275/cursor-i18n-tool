@@ -41,31 +41,29 @@
   ❌ 下周四再见 ———— 小瘪三
 ```
 
+## 📋 环境要求
+
+| 依赖 | 版本 | 说明 |
+|------|------|------|
+| **Node.js** | ≥ 16（推荐 18+） | [下载地址](https://nodejs.org/zh-cn) |
+| **npm** | 随 Node.js 自带 | 用于安装项目依赖 |
+| **Git** | 任意版本 | 用于克隆仓库（也可直接下载 ZIP） |
+
+> 💡 **检查版本**：终端运行 `node -v` 和 `npm -v` 确认已安装。
+
 ## 🚀 快速开始
 
-### 方式一：源码运行（推荐开发者）
-
 ```bash
-# 克隆仓库
-git clone https://github.com/yourname/cursor-i18n-tool.git
-cd cursor-i18n-tool
+# 1. 克隆仓库
+git clone https://github.com/Wuyf5275/cursor-.git
+cd cursor-
 
-# 安装依赖
+# 2. 安装依赖
 npm install
 
-# 启动（交互式菜单）
+# 3. 启动（交互式菜单）
 node index.js
 ```
-
-### 方式二：下载可执行文件（推荐普通用户）
-
-前往 [Releases](https://github.com/yourname/cursor-i18n-tool/releases) 下载对应平台的可执行文件，双击运行即可。
-
-| 平台 | 文件 |
-|------|------|
-| Windows x64 | `cursor-i18n-tool-win.exe` |
-| macOS x64 | `cursor-i18n-tool-macos` |
-| macOS ARM (M1/M2) | `cursor-i18n-tool-macos-arm64` |
 
 ### 命令行静默模式
 
