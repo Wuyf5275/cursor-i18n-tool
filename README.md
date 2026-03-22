@@ -41,22 +41,35 @@
   ❌ 下周四再见 ———— 小瘪三
 ```
 
-## 📋 环境要求
+## 🚀 快速开始
+
+### 方式一：下载可执行文件（推荐，无需安装任何环境）
+
+前往仓库的 [`dist/`](https://github.com/Wuyf5275/cursor-i18n-tool/tree/main/dist) 目录，下载对应平台的可执行文件：
+
+| 平台 | 文件 | 说明 |
+|------|------|------|
+| Windows x64 | `cursor-i18n-tool-win-x64.exe` | 双击运行即可 |
+| macOS x64 | `cursor-i18n-tool-macos-x64` | Intel 芯片 Mac |
+| macOS ARM | `cursor-i18n-tool-macos-arm64` | M1/M2/M3 芯片 Mac |
+
+> 💡 macOS 用户首次运行可能需要：右键 → 打开，或在终端执行 `chmod +x ./cursor-i18n-tool-macos && ./cursor-i18n-tool-macos`
+
+### 方式二：源码运行（适合开发者 / 想要自定义翻译）
+
+**环境要求：**
 
 | 依赖 | 版本 | 说明 |
 |------|------|------|
 | **Node.js** | ≥ 16（推荐 18+） | [下载地址](https://nodejs.org/zh-cn) |
 | **npm** | 随 Node.js 自带 | 用于安装项目依赖 |
-| **Git** | 任意版本 | 用于克隆仓库（也可直接下载 ZIP） |
 
-> 💡 **检查版本**：终端运行 `node -v` 和 `npm -v` 确认已安装。
-
-## 🚀 快速开始
+> 💡 终端运行 `node -v` 确认已安装 Node.js。
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/Wuyf5275/cursor-.git
-cd cursor-
+git clone https://github.com/Wuyf5275/cursor-i18n-tool.git
+cd cursor-i18n-tool
 
 # 2. 安装依赖
 npm install
