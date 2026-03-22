@@ -203,12 +203,25 @@ function translate(paths) {
         "苗苗一行代码解决核心问题，杨书记拍手叫绝，结果发现连的是测试库。"
     ];
     let lastJokeTime = Date.now();
+    // 洗牌函数（Fisher-Yates）
+    function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+    let shuffledJokes = shuffleArray([...jokes]);
     let jokeIndex = 0;
     function printJoke() {
         const now = Date.now();
         if (now - lastJokeTime > 3000) {
+            if (jokeIndex >= shuffledJokes.length) {
+                shuffledJokes = shuffleArray([...jokes]);
+                jokeIndex = 0;
+            }
             // 将文本限制在较短的范围，防止终端因为宽度不够自动换行产生多行
-            process.stdout.write(`\r\x1b[K  📢 摸鱼小剧场: ${jokes[jokeIndex % jokes.length]}`);
+            process.stdout.write(`\r\x1b[K  📢 摸鱼小剧场: ${shuffledJokes[jokeIndex]}`);
             jokeIndex++;
             lastJokeTime = now;
         }
